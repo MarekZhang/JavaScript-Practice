@@ -1,0 +1,71 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    /* up right down left */
+    margin: 20px auto auto 80px;
+}
+
+.header .logo{
+    position: relative;
+    float:left;
+
+}
+
+.header .menu{
+    position: relative;
+    float: left;
+    top:12px;
+    left:15px;
+}
+
+.header .LogNReg{
+    float:right;
+    margin-top:12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header .menu .classification{
+    text-align: center;
+    padding-bottom:10px;
+    width:100px;
+    border-bottom:1px solid grey;
+}
+
+.header .menu ul{
+    display: none;
+    text-align:center;
+}
+
+.header .menu ul li{
+    list-style:none;
+    margin-top:15px;
+}
+
+.header .LogNReg ul{
+    list-style:none;
+    margin-right:40px;
+}
+
+.header .LogNReg ul li{
+    float:left;
+    margin-right:35px;
+}
+
+.header .clearDiv{
+    content:"";
+    visibility:hidden;
+    height:0px;
+    display:block;
+    clear:both;
+}
+
+/* 通过css控制菜单的显示 */
+/* .header .menu:hover ul{
+    display: block;
+} */
