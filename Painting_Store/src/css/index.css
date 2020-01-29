@@ -5,7 +5,8 @@
 
 .header{
     /* up right down left */
-    margin: 20px auto auto 80px;
+    margin: 20px auto;
+    width:1200px;
 }
 
 .header .logo{
@@ -40,21 +41,29 @@ a{
 .header .menu ul{
     display: none;
     text-align:center;
+    position:absolute;
+    width:100px;
+    opacity: 0.6;
+    background-color:white;
+
 }
 
 .header .menu ul li{
     list-style:none;
     margin-top:15px;
+    margin-bottom:10px;
 }
 
 .header .LogNReg ul{
     list-style:none;
     margin-right:40px;
+
 }
 
 .header .LogNReg ul li{
     float:left;
     margin-right:35px;
+    
 }
 
 .header .clearDiv{
@@ -63,6 +72,127 @@ a{
     height:0px;
     display:block;
     clear:both;
+}
+
+.content {
+    width: 1200px;
+    margin:20px auto;
+}
+
+.content .Banner .welcome-pic{
+    margin-top:5px;
+}
+
+.content .content-pic{
+    width:1280px;
+    margin:20px auto;
+}
+
+.content .content-pic ul{
+    list-style:none;
+}
+
+.content .content-pic ul li{
+    float:left;
+    width:361px;
+    height:520px;
+    margin-right:58px;
+    margin-top:30px;
+    box-shadow: 0 0 15px #000000;
+}
+
+.content .content-pic .btn .cart{
+    width:50px;
+    height:25px;
+    background-color: red;
+    text-align: center;
+    border-radius:5px;
+    float:right;
+}
+
+.content .content-pic .btn .cart .cart-img{
+    width:25px;
+    height:20px;
+    margin-top:3px;
+}
+
+.content .content-pic .btn .price{
+    float:left;
+}
+
+.content .content-pic .info {
+    margin:20px 20px;
+}
+
+.content>.content-pic .info>.title{
+    color:red;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+.content>.content-pic .info>.description{
+    text-align:justify;
+    line-height:25px;
+}
+
+.content .content-pic .btn .price{
+    color:#FF6347;
+    margin-left:20px;
+    font-size: 25px;
+}
+
+.content .content-pic .btn .cart{
+    margin-right:20px;
+}
+
+.content .page-nav{
+    width:1200px;
+    height:80px;
+    line-height:80px;
+    overflow: hidden;
+
+}
+
+.content .page-nav ul{
+    list-style:none;
+    width:650px;
+    margin:auto auto;
+}
+
+.content .page-nav ul li{
+    float:left;
+    margin:10px 15px;
+}
+
+.content .page-nav .first-page{
+    border-radius: 50%;
+    background-color:grey;
+    padding:3px 9px;
+}
+
+.clearDiv::after{
+    content:"";
+    visibility:hidden;
+    height:0px;
+    display:block;
+    clear:both;
+}
+
+.footer{
+    width:1200px;
+    height:100px;
+    margin:50px auto;
+
+}
+
+.footer p{
+    text-align:center;
+    border-top:1px solid #ccc;
+    padding:40px;
+}
+
+.footer p span{
+    color:#DC143C;
 }
 
 /* 通过css控制菜单的显示 */
