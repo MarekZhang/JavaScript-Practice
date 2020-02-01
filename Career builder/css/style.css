@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:"Microsoft YaHei";
+
+}
+
+ul{
+    list-style:none;
+}
+
+.banner{
+    width:1700px;
+    margin:auto auto;
+}
+
+.banner .logo {
+    float:left;
+    margin:0px;
+    height:48px;
+}
+
+.banner .nav{
+    float: left;
+    width:1440px;
+    height: 48px;
+    background-color: #07cbc9;
+}
+
+.banner .nav ul a{
+    text-decoration: none;
+    color:#ffffff;
+
+}
+
+.banner .nav ul{
+    float: right;
+}
+
+.banner .nav ul li{
+    float:left;
+    line-height:46px;
+    margin-right:30px;
+    
+}
+
+.banner .banner-pic{
+    margin-top:0px;
+    background-image:url("../images/banner3.jpg");
+    width:1700px;
+    height:800px;
+}
+
+.banner .banner-pic .info-record{
+    background:transparent;
+    width:580px;
+    margin-left:560px;
+    margin-top:20px;
+    border:2px solid #979A9A;
+    font-size: 20px;
+    color:#D0D3D4;
+    padding:15px;
+}
+
+.banner .banner-pic #Name{
+    margin-top:150px;
+    height:20px;
+}
+
+.banner .banner-pic #Phone, #Email{
+    height:20px;
+}
+
+.banner .banner-pic .Comment{
+    height:150px;
+    width:580px;
+    padding:15px;
+    margin-left: 560px;
+    background:transparent;
+    border:2px solid #979A9A;
+    margin-top:20px;
+    color:#D0D3D4;
+    font-size: 20px;
+
+}
+
+.banner .banner-pic .info-send{
+    width:200px;
+    margin-left:750px;
+    margin-top:30px;
+    height:50px;
+    font-size:20px;
+    color:#D0D3D4;
+    background:transparent;
+    border:2px solid #979A9A;
+}
+
+.content .content-header{
+    margin:60px auto;
+    width:200px;
+    height:30px;
+    text-align: center;
+}
+
+.content .content-header p{
+    font-size:45px;    
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+
+}
+
+.content p:after{
+    /* position:absolute;破坏文档流变为脱标流 bottom是找其父级元素的底边 */
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 1px;
+    bottom:0px;
+    left: 38%;
+    margin-bottom:-10px;
+    border-top: 2px solid #07cbc9;
+}
+
+.content .content-below{
+    width: 470px;
+    text-align: center;
+    margin:0px auto;
+
+}
+
+.content .content-below span{
+    font-size: 20px;
+    color:#979A9A;
+}
+
+.content .content-pics{
+    margin:20px auto;
+    text-align: center;;
+}
