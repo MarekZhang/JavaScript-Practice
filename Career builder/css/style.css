@@ -41,7 +41,10 @@ ul{
     float:left;
     line-height:46px;
     margin-right:30px;
-    
+}
+
+.banner .nav ul li:hover{
+    background-color:black;
 }
 
 .banner .banner-pic{
@@ -49,6 +52,20 @@ ul{
     background-image:url("../images/banner3.jpg");
     width:1700px;
     height:800px;
+}
+
+.banner .banner-pic .info-record:hover{
+    border:2px solid #07cbc9;
+}
+
+.banner .banner-pic .Comment:hover{
+    border:2px solid #07cbc9;
+}
+
+.banner .banner-pic .info-send:hover{
+    background-color:#07cbc9;
+    border:0px;
+    color:white;
 }
 
 .banner .banner-pic .info-record{
@@ -354,6 +371,11 @@ ul{
     top:80px;
 }
 
+.content .center .explore .btn1:hover{
+    background:transparent;
+    border:1px solid black;
+    color:black;
+}
 
 .content .Gallery .Gallery-content{
     display:block;
@@ -471,8 +493,10 @@ ul{
     color:white;
 }
 
-.blank{
-    height:1000px;
+
+.content .facility .lib-btn:hover{
+    background:transparent;
+    border:1px solid black;
 }
 
 
