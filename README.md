@@ -1,7 +1,7 @@
 # JavaScript-Practice
 
 ### Career Build
-![Image discription](https://github.com/MarekZhang/JavaScript-Practice/blob/master/Career%20builder/final.png)
+![Image discription](https://github.com/MarekZhang/JavaScript-Practice/blob/master/Career%20builder/final.jpg)
 
 ### Calculator
 ![Image discription](https://github.com/MarekZhang/JavaScript-Practice/blob/master/JS_Calculator/calculator.png)
