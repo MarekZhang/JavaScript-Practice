@@ -4,166 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Painting_Store</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="header">
+    <div class="banner">
         <div class="logo">
-            <img src="image/logo.png"/>
+            <a href="#"><img src="images/logo.png"></a>
         </div>
-        <div  class="menu" onmouseleave="HiddeMenu()">
-            <div class="classification" onclick="ShowMenu()" >
-                <!-- href="#"表示停留在当前页面不刷新 -->
-                <a href="#">内容分类</a> 
-            </div>
-
-            <ul id="Cla_List">
-                <li>现实主义</li>
-                <li>抽象主义</li>
-            </ul>
-        </div>
-        <div class="LogNReg">
+        <div class="nav">
             <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">FACULTY</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
+        </div>
+        <div class="banner-pic">
+            <input type="text" class="info-record" id="Name" value="your Name" />
+            <input type="text" class="info-record" id="Phone" value="your Phone" />
+            <input type="text" class="info-record" id="Email" value="your Email" />
+            <textarea class="Comment">Write your comment here</textarea>
+            <br>
+            <input type="button" class="info-send" value="SEND MESSAGE"/>
         </div>
     </div>
-
     <div class="content">
-
-        <div class="Banner">
-            <img src="image/welcome.png" class="welcome-pic"/>
+        <div class="content-header">
+            <p class="underline">ABOUT</p>
+        </div>
+        <div class="content-below">
+            <span>Lorem Ipsum is simply dummy text of the pringting 
+                and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s.</span>
         </div>
 
-        <div class="content-pic">
-            <ul>
-                <li>
-                    <img src="image/wudaojiaoshi.jpg" />
-                    <div class="info">
-                        <p class="title">一帮💃的</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
+        <div class="center">
+            <div class="center-left">
+                <div class="WORD">
+                    <span>A WORD ABOUT US</span>
+                </div>
+                <div class="explore">
+                    <div class="para">
+                        <span>Praesent dignissim viverra est, sed bibendum ligula
+                            congue non. Sed ac nisi et felis gravida commodo? Suspendisse
+                            eget ullamacorper ipsum. Suspendisse diam amet.
+                        </span>
                     </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <img src="image/hongmofangde wuhui.jpg" />
-                    <div class="info">
-                        <p class="title">逛大街</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
-                    </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <img src="image/richuyinxing.jpg" />
-                    <div class="info">
-                        <p class="title">划小船</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
-                    </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <img src="image/songshulinzhicheng.jpg" />
-                    <div class="info">
-                        <p class="title">熊瞎子</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
-                    </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <img src="image/wen.jpg" />
-                    <div class="info">
-                        <p class="title">液体人</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
-                    </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <img src="image/wumingnvlang.jpg" />
-                    <div class="info">
-                        <p class="title">高冷女人</p>
-                        <p class="description">图片描述可以分为多种，一种是单一说明，就比如直接的告诉看图者
-                            这篇文 章是要介绍什么样子的内容，一些配图可以分为含蓄类型的，
-                            这样的配图一般会 图片描述可以分为多种.</p>
-                    </div>
-                    <div class="btn">
-                        <div class="price">$600.0</div>
-                        <a href="#">
-                            <div class="cart">
-                                <img src="image/cart.svg" class="cart-img">
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+                    <input type="button" class="btn1" value="EXPLORE"/>
+                </div>
+            </div>
+            <div class="center-mid">
+                <img src="../images/bb3.jpg" />
+            </div>
+            <div class="center-right">
+                <div class="student">
+                    <p class="noOfStudent">70000</p>
+                    <br>
+                    <span class="student-word">Students</span>
+                </div>
+                <div class="faculty">
+                    <p class="noOfFaculty">600</p>
+                    <br>
+                    <span class="faculty-word">Faculty</span>
+                </div>
+            </div>
         </div>
-        <div class="page-nav">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">上一页</a></li>   
-                <li><span class="first-page">1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">98</a></li>
-                <li><a href="#">99</a></li>
-                <li><a href="#">下一页</a></li>
-                <li><a href="#">尾页</a></li>
-            </ul>
-        </div>
+
+      
+        
+
     </div>
-    <div class="clearDiv"></div>
     <div class="footer">
-        <p><span>M-GALLARY</span>©2020 POWERED BY MARK.ZHANG</p>
+
     </div>
 </body>
 </html>
