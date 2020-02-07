@@ -1,0 +1,103 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+}
+
+ul{
+	list-style: none;
+}
+
+.main{
+	width:1200px;
+	height:460px;
+	margin:0px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner{
+	width:1200px;
+	height:460px;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner .banner-slide{
+	background-repeat: no-repeat;
+	width:1200px;
+	height:460px;
+	display:none;
+	position:absolute;
+}
+
+.main .banner .active-slide{
+	display:block;
+}
+
+.banner .slide1{
+	background-image: url("../img/bg1.jpg");
+
+}
+
+.banner .slide2{
+	background-image: url("../img/bg2.jpg");
+}
+
+.banner .slide3{
+	background-image: url("../img/bg3.jpg");
+}
+
+.main .button{
+	width:40px;
+	height:80px;
+	position:absolute;
+	left:244px;
+	top:50%;
+	margin-top:-40px;
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-image: url("../img/arrow.png");
+}
+
+.main .button:hover{
+	background-color:#333;
+	opacity: 40%;
+}
+
+.main .prev{
+	transform:rotate(180deg);
+}
+
+.main .next{
+	left:auto; /*取消button类中left的定位作用*/
+	right:0px;
+}
+
+.main .dot-navigation{
+	position:absolute;
+	right:25px;
+	bottom:20px;
+}
+
+.main .dot-navigation span{
+	width:15px;
+	height:15px;
+	background-color:rgba(17,17,27,0.4);
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+	border-radius: 50%;
+	display:inline-block;
+	margin-left:10px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.main .dot-navigation .active{
+	background-color:rgba(255,255,255,0.8);
+	box-shadow: 0 0 0 2px rgba(17,17,27,0.4) inset;
+}
+
+
+
+
+
