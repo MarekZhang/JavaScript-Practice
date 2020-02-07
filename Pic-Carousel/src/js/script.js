@@ -10,7 +10,11 @@ var index = 0,
     timer = null,
     Dots = ById("Dots").getElementsByTagName("span"),
     Prev = ById("prev"),
-    Next = ById("next");
+    Next = ById("next"),
+    Menu_Content = ById("menu-content").getElementsByClassName("classification"),
+    sub_menu = ById("sub-menu"),
+    sub_inner = sub_menu.getElementsByClassName("sub"),
+    main_menu = ById("main-menu");
 
 function windowSliding(){
     var main = ById("main");
@@ -53,7 +57,30 @@ function windowSliding(){
             index = 2;
         slidingImage();
     }
+    //sliding over sub-menu
+    for(var i = 0; i < Menu_Content.length; i++){
+        Menu_Content[i].setAttribute("data-index", i);
+        Menu_Content[i].onmouseover = function(){
+            var ind = this.getAttribute("data-index");
+            sub_menu.className = "sub-menu";
+            for(var i = 0; i < sub_inner.length; i++){
+                sub_inner[i].style.display = "none";
+                Menu_Content[i].style.background = "none";
+            }
+            this.style.background = "rgba(0,0,0,0.2)";
+            sub_inner[ind].style.display = "block";
+        }
 
+        main_menu.onmouseout = function(){
+            sub_menu.className = "sub-menu hide";
+        }
+
+        sub_menu.onmouseover = function(){
+            sub_menu.className = "sub-menu";
+        }
+
+        
+    }
  }
 
 function slidingImage(){

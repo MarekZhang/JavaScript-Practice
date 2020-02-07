@@ -11,7 +11,7 @@ ul{
 .main{
 	width:1200px;
 	height:460px;
-	margin:0px auto;
+	margin:100px auto;
 	overflow: hidden;
 	position: relative;
 }
@@ -97,7 +97,85 @@ ul{
 	box-shadow: 0 0 0 2px rgba(17,17,27,0.4) inset;
 }
 
+.main-menu{
+	width:244px;
+	height:460px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:rgba(7,17,27,0.3);
+	z-index: 1;
+}
 
+.main .main-menu .menu-content{
+	width:244px;
+	height:4540px;
+	position :absolute;
+	top:6px;
+	left:0px;
+	z-index: 3;
+}
 
+a:link, a:visited{
+	text-decoration:none;
+}
 
+.main .main-menu .menu-content .classification{
+	width:244px;
+	height:65px;
+	line-height:64px;
+	position:relative;
+}
 
+.main .main-menu .menu-content .classification span{
+	display:block;
+	margin-left:30px;
+	width:160px;
+	border-bottom :1px solid rgba(255,255,255,0.4);
+	color:rgba(255,255,255, 0.8);
+	font-size:15px;
+}
+
+.main .main-menu .menu-content .classification i{
+	position:absolute;
+	right:20px;
+	top:30px;
+	color:rgba(255,255,255, 0.7);
+}
+
+.main .main-menu .sub-menu{
+	height:460px;
+	width:732px;
+	position: absolute;
+	left:244px;
+	top:0px;
+	z-index:10;
+}
+
+.main-menu .hide{
+	display:none;
+}
+
+.main .main-menu .sub-menu .sub{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-image:url("../img/fe.png");
+	display:none;	
+}
+
+.main .main-menu .sub-menu .sub .sub-phone-inner{
+	width:650px;
+	height:460px;
+	margin-left:40px;
+
+}
+
+.sub-menu .title{
+	display:block;
+	margin-top:25px;
+	color:#45B39D;
+	font-weight: bold;
+}
